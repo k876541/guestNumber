@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D441D68F26137D4E0008B198 /* settingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D441D68E26137D4E0008B198 /* settingViewController.swift */; };
 		D48EFAE2261074BB00BF7463 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48EFAE1261074BB00BF7463 /* AppDelegate.swift */; };
 		D48EFAE4261074BB00BF7463 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48EFAE3261074BB00BF7463 /* SceneDelegate.swift */; };
-		D48EFAE6261074BB00BF7463 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48EFAE5261074BB00BF7463 /* ViewController.swift */; };
 		D48EFAE9261074BB00BF7463 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48EFAE7261074BB00BF7463 /* Main.storyboard */; };
 		D48EFAEB261074BE00BF7463 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D48EFAEA261074BE00BF7463 /* Assets.xcassets */; };
 		D48EFAEE261074BE00BF7463 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48EFAEC261074BE00BF7463 /* LaunchScreen.storyboard */; };
+		D48EFAF6261074E200BF7463 /* guestNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48EFAF5261074E200BF7463 /* guestNumberViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D441D68E26137D4E0008B198 /* settingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingViewController.swift; sourceTree = "<group>"; };
 		D48EFADE261074BB00BF7463 /* guestNumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = guestNumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D48EFAE1261074BB00BF7463 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D48EFAE3261074BB00BF7463 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D48EFAE5261074BB00BF7463 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D48EFAE8261074BB00BF7463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D48EFAEA261074BE00BF7463 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D48EFAED261074BE00BF7463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D48EFAEF261074BE00BF7463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D48EFAF5261074E200BF7463 /* guestNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = guestNumberViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				D48EFAE1261074BB00BF7463 /* AppDelegate.swift */,
 				D48EFAE3261074BB00BF7463 /* SceneDelegate.swift */,
-				D48EFAE5261074BB00BF7463 /* ViewController.swift */,
+				D48EFAF5261074E200BF7463 /* guestNumberViewController.swift */,
 				D48EFAE7261074BB00BF7463 /* Main.storyboard */,
 				D48EFAEA261074BE00BF7463 /* Assets.xcassets */,
 				D48EFAEC261074BE00BF7463 /* LaunchScreen.storyboard */,
 				D48EFAEF261074BE00BF7463 /* Info.plist */,
+				D441D68E26137D4E0008B198 /* settingViewController.swift */,
 			);
 			path = guestNumber;
 			sourceTree = "<group>";
@@ -137,9 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D48EFAE6261074BB00BF7463 /* ViewController.swift in Sources */,
 				D48EFAE2261074BB00BF7463 /* AppDelegate.swift in Sources */,
+				D48EFAF6261074E200BF7463 /* guestNumberViewController.swift in Sources */,
 				D48EFAE4261074BB00BF7463 /* SceneDelegate.swift in Sources */,
+				D441D68F26137D4E0008B198 /* settingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
