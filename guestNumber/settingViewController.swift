@@ -32,7 +32,6 @@ class settingViewController: UIViewController {
         
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

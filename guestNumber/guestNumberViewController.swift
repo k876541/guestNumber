@@ -10,18 +10,14 @@ import UIKit
 
 class guestNumberViewController: UIViewController {
 
-    var timer :Timer?
-    var times = 5
-    var countdown = 60
-    
-    
-    
     @IBOutlet weak var minNumberLabel: UILabel!
     @IBOutlet weak var maxNumberLabel: UILabel!
     @IBOutlet weak var guestNumberTextField: UITextField!
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var timesLabel: UILabel!
     
+    //宣告最大數值 最小數值 以及隨機數
+    var times = 5
     var max = 100
     var min = 1
     var rightnumber = Int.random(in: 1...100)
@@ -29,9 +25,6 @@ class guestNumberViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         timesLabel.text = "次數剩下：\(times)"
-
-        
-        
         // Do any additional setup after loading the view.
     }
     
@@ -40,13 +33,15 @@ class guestNumberViewController: UIViewController {
         //收鍵盤
 //        view.endEditing(true)
         
+        //判斷輸入的數字是不是數字
         if let guesstext = guestNumberTextField.text,
            let guess = Int(guesstext){
-        
+            //在playground偷偷列印答案
             print(rightnumber)
             
+            
             if guess > max || guess < min {
-                statusLabel.text = "超過範圍，請輸入數字\(min)~\(max)"
+                statusLabel.text = "超過範圍，\n請輸入數字\(min)~\(max)"
                 times -= 1
                 timesLabel.text = "次數剩下：\(times)"
             }else if guess > rightnumber {
@@ -68,6 +63,7 @@ class guestNumberViewController: UIViewController {
                 finish("沒機會啦！")
             }
         }
+        //輸入完之後則會清空textfield
         guestNumberTextField.text = ""
     }
     
@@ -78,9 +74,9 @@ class guestNumberViewController: UIViewController {
     
     
     @IBAction func tapNumber(_ sender: UITextField) {
-        
     }
     
+    //重置數據的func
     func reset()  {
         times = 5
         max = 100
@@ -93,16 +89,13 @@ class guestNumberViewController: UIViewController {
         timesLabel.text = "次數剩下：\(times)"
     }
     
+    //當猜對或猜錯都是呼叫 alart來宣告結果，並且點擊“ＯＫ”後會重置遊戲
     func finish(_ title:String) {
-        
-        
-        let alert = UIAlertController(title: title, message: "答案是\(rightnumber)", preferredStyle: .alert)
-                        
+        let alart = UIAlertController(title: title, message: "答案是\(rightnumber)", preferredStyle: .alert)
         let action = UIAlertAction(title: "Again", style: .default, handler: { action in self.reset() })
-        
-        alert.addAction(action)
-        present(alert, animated: true, completion: nil)
-
+        //呼叫alart
+        alart.addAction(action)
+        present(alart, animated: true, completion: nil)
     }
     
     /*
